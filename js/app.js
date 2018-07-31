@@ -240,6 +240,8 @@ function clearTimer(){
 
 //restart game button
 reset.addEventListener('click', function(e){
+  clearTimer(timer);
+  timer = undefined
   initGame();
   addEvt();
 });
